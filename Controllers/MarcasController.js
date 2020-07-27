@@ -38,6 +38,9 @@ const MarcasController = {
         let cantidadAutos = cantidadVehiculos.length;
         res.write("Cantidad de Vehiculos Que Coinciden Con esa Marca: " + cantidadAutos.toString())
         res.end()
+    },
+    error: (req, res) => {
+        res.send("Error 404 Not Found")
     }
 }
 module.exports = MarcasController
